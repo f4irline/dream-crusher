@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    android:orientation="vertical"
+    android:shrinkColumns="*"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/tableOfNumbers"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:shrinkColumns="*">
+
+        <TableRow
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button_1"
+                style="@style/gridButton"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/button_2"
+                style="@style/gridButton"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/button_3"
+                style="@style/gridButton"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/button_4"
+                style="@style/gridButton"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/button_5"
+                style="@style/gridButton"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/button_6"
+                style="@style/gridButton"
+                android:text="6" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button_7"
+                style="@style/gridButton"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/button_8"
+                style="@style/gridButton"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/button_9"
+                style="@style/gridButton"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/button_10"
+                style="@style/gridButton"
+                android:text="10" />
+
+            <Button
+                android:id="@+id/button_11"
+                style="@style/gridButton"
+                android:text="11" />
+
+            <Button
+                android:id="@+id/button_12"
+                style="@style/gridButton"
+                android:text="12" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button_13"
+                style="@style/gridButton"
+                android:text="13" />
+
+            <Button
+                android:id="@+id/button_14"
+                style="@style/gridButton"
+                android:text="14" />
+
+            <Button
+                android:id="@+id/button_15"
+                style="@style/gridButton"
+                android:text="15" />
+
+            <Button
+                android:id="@+id/button_16"
+                style="@style/gridButton"
+                android:text="16" />
+
+            <Button
+                android:id="@+id/button_17"
+                style="@style/gridButton"
+                android:text="17" />
+
+            <Button
+                android:id="@+id/button_18"
+                style="@style/gridButton"
+                android:text="18" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button_19"
+                style="@style/gridButton"
+                android:text="19" />
+
+            <Button
+                android:id="@+id/button_20"
+                style="@style/gridButton"
+                android:text="20" />
+
+            <Button
+                android:id="@+id/button_21"
+                style="@style/gridButton"
+                android:text="21" />
+
+            <Button
+                android:id="@+id/button_22"
+                style="@style/gridButton"
+                android:text="22" />
+
+            <Button
+                android:id="@+id/button_23"
+                style="@style/gridButton"
+                android:text="23" />
+
+            <Button
+                android:id="@+id/button_24"
+                style="@style/gridButton"
+                android:text="24" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button_25"
+                style="@style/gridButton"
+                android:text="25" />
+
+            <Button
+                android:id="@+id/button_26"
+                style="@style/gridButton"
+                android:text="26" />
+
+            <Button
+                android:id="@+id/button_27"
+                style="@style/gridButton"
+                android:text="27" />
+
+            <Button
+                android:id="@+id/button_28"
+                style="@style/gridButton"
+                android:text="28" />
+
+            <Button
+                android:id="@+id/button_29"
+                style="@style/gridButton"
+                android:text="29" />
+
+            <Button
+                android:id="@+id/button_30"
+                style="@style/gridButton"
+                android:text="30" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button_31"
+                style="@style/gridButton"
+                android:text="31" />
+
+            <Button
+                android:id="@+id/button_32"
+                style="@style/gridButton"
+                android:text="32" />
+
+            <Button
+                android:id="@+id/button_33"
+                style="@style/gridButton"
+                android:text="33" />
+
+            <Button
+                android:id="@+id/button_34"
+                style="@style/gridButton"
+                android:text="34" />
+
+            <Button
+                android:id="@+id/button_35"
+                style="@style/gridButton"
+                android:text="35" />
+
+            <Button
+                android:id="@+id/button_36"
+                style="@style/gridButton"
+                android:text="36" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button_37"
+                style="@style/gridButton"
+                android:text="37" />
+
+            <Button
+                android:id="@+id/button_38"
+                style="@style/gridButton"
+                android:text="38" />
+
+            <Button
+                android:id="@+id/button_39"
+                style="@style/gridButton"
+                android:text="39" />
+
+            <Button
+                android:id="@+id/button_40"
+                style="@style/gridButton"
+                android:text="40" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/yearsText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:background="@drawable/start_button"
+            android:onClick="startLottoHandler"
+            android:text="I Feel Lucky" />
+    </LinearLayout>
+
+</LinearLayout>

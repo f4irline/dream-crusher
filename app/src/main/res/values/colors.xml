@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="start_button_default">#77bb00</color>
+    <color name="start_button_pressed">#77ee00</color>
+    <color name="start_button_focused">#77ee00</color>
+
+    <color name="number_button_default">#1c76bb</color>
+    <color name="number_button_pressed">#1caabb</color>
+    <color name="number_button_focused">#1caabb</color>
+    <color name="number_button_disabled">#333333</color>
+
+    <color name="number_button_random">#1133ff</color>
+</resources>
