@@ -38,6 +38,8 @@ public class MainActivity extends BaseActivity {
     private LottoService lottoService;
     private boolean isBound = false;
 
+    private Context appContext;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +51,7 @@ public class MainActivity extends BaseActivity {
          */
         Debug.loadDebug(this);
 
+        appContext = this;
         yearsText = findViewById(R.id.yearsText);
         yearsSpent = "0 years spent";
         yearsText.setText(yearsSpent);
@@ -253,6 +256,18 @@ public class MainActivity extends BaseActivity {
             case (R.id.minus):
                 lottoService.decreaseSpeed();
                 return true;
+            case (R.id.five):
+                lottoService.setDifficulty(5);
+                item.setChecked(true);
+                return true;
+            case (R.id.six):
+                lottoService.setDifficulty(6);
+                item.setChecked(true);
+                return true;
+            case (R.id.seven):
+                lottoService.setDifficulty(7);
+                item.setChecked(true);
+                return true;
         }
         return false;
     }
@@ -291,6 +306,7 @@ public class MainActivity extends BaseActivity {
                 // Check if we've won, if we have, reset start button
                 if (extras.getBoolean("victory")) {
                     setStartButton();
+                    Toast.makeText(appContext, "Found " + extras.getInt("amount") + " of the same numbers!", Toast.LENGTH_LONG).show();
                 }
 
                 // Check if we have randomNumbers key, if we do, send them to styleRandomButtons() method

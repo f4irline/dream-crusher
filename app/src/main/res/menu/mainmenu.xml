@@ -7,4 +7,16 @@
     <item android:title="-"
         app:showAsAction="ifRoom"
         android:id="@+id/minus"/>
+    <group android:checkableBehavior="single">
+        <item android:title="5"
+            app:showAsAction="ifRoom"
+            android:id="@+id/five"/>
+        <item android:title="6"
+            app:showAsAction="ifRoom"
+            android:id="@+id/six"/>
+        <item android:title="7"
+            app:showAsAction="ifRoom"
+            android:checked="true"
+            android:id="@+id/seven"/>
+    </group>
 </menu>

@@ -15,5 +15,8 @@
         <item name="android:onClick">chooseNumber</item>
         <item name="android:state_activated">false</item>
     </style>
+    <style name="actionBarSelector">
+
+    </style>
 
 </resources>

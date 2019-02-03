@@ -33,6 +33,7 @@ public class LottoService extends Service implements Runnable {
 
     private int THREAD_SPEED;
     private int WEEKS;
+    private int REQUIRED_AMOUNT;
 
     /**
      * Called when bound.
@@ -45,6 +46,7 @@ public class LottoService extends Service implements Runnable {
         Debug.print(TAG, "onBind()", "Service bound.", 1, this);
         calculatingLotto = false;
         THREAD_SPEED = 550;
+        REQUIRED_AMOUNT = 7;
         WEEKS = 0;
 
         // Returns the IBinder, which wraps LottoService inside it.
@@ -117,6 +119,10 @@ public class LottoService extends Service implements Runnable {
         }
     }
 
+    public void setDifficulty(int difficulty) {
+        REQUIRED_AMOUNT = difficulty;
+    }
+
     /**
      * Called when thread is started.
      */
@@ -160,13 +166,14 @@ public class LottoService extends Service implements Runnable {
         LottoLogic.generateLottoNumbers();
         int sameNumbers = LottoLogic.checkNumbers(selection);
         // If we've 7 of the same, stop this service and stop lotto as well.
-        if (sameNumbers == 7) {
+        if (sameNumbers == REQUIRED_AMOUNT) {
             stopSelf();
             stopLotto();
             // Broadcast victory to the main activity and display notification to user.
             createBroadcast(new Intent("lotto")
-                .putExtra("victory", true));
-            displayNotification("You won!", "Found 7 of the same numbers!");
+                .putExtra("victory", true)
+                .putExtra("amount", REQUIRED_AMOUNT));
+            displayNotification("You won!", "Found " + REQUIRED_AMOUNT + " of the same numbers!");
         }
         Debug.print(TAG, "checkNumbers", "Amount of same numbers: "+sameNumbers, 1, this);
     }
